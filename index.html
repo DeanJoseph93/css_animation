@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS | Animation</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen">
+</head>
+<body>
+
+<div id="wrapper">
+
+
+        <header>
+            <div class="top-page">
+                <div class="container">
+
+                    <div class="center">
+                        <h1> CSS | Transitions and Transformation Exercises</h1>
+                    </div><!--/center-->
+
+                </div><!--/container-->
+            </div><!--/top-page-->
+
+        </header>
+
+        <main>
+
+            <section id="intro">
+                <div class="container">
+                    <div class="row">
+                        <div class="introduction-text">
+                            <h2 class="center">CSS  | Essential Training</h2>
+                            <br>
+                            <p>Hello, my name is Dean Joseph and this web page is all about exploring and working with  <span class="bold">Transitions</span> and <span class="bold">Transformations</span>. I have been devevloping for over a year and a half now, and the content on this page will hopefully help you understand how to apply css transitions!</p>
+
+
+                                <p class="center">Check out a range of my personal projects in my <a href="https://deanjosephsplanet.co.uk" target="_blank">BLOG PAGE</a></p>
+
+
+                            <hr>
+                        </div><!--/introduction-text-->
+                    </div><!--/row-->
+                </div><!--/container-->
+            </section><!--/intro-->
+
+
+            <section id="exercises">
+                <div class="container">
+                    <div class="row">
+
+                           <div class="left-col">
+                               <div class="cont">
+
+                                   <h3>Transitions</h3>
+                                   <p>A transition is a change of state from an initial to an end state. The transition style has two properties. The first defines which style is the transition and the other property/parameter defines the duration of the transition.</p>
+
+                                   <br>
+
+                                   <div class="center">
+                                       <button class="btn">Button</button>
+                                   </div><!--/center-->
+
+
+                                   <p>In this demo, when you hover over the button, the object will change from a small dark red button to a larger button, with a white background. I have given the button the styling for this effect by using the :hover pseudo class.</p>
+
+
+                                   <p>transition: property duration; - The duration can be measured in milliseconds or seconds.</p>
+                                   <hr>
+                                   <p>transition: all 2s</p>
+                                   <p><span class="bold">Above</span> I selected the all option property and a duration of 2s to see the transition take place.</p>
+
+                                   <div class="center">
+                                       <h3>CSS | Transition (Shapes) Hover Effect</h3>
+                                   </div><!--/center-->
+
+                                   <br>
+                                   <div class="btn-1"></div>
+                                   <p>In the example above, I created a small box with a position relative and a applied styling to the left, bottom, color, width and height properties. On the hover event, I changed the styling and also the border-radius. Previously, on the hover state of the object, I used the 'all' option, but in this demo I didn't. Using 'all' can affect the browsers performance, if it is tracking a range of styles. As a result, you can also place specific styles in a comma separated list of property name and duration.</p>
+                                   <p>transition: property-name duration, property-name duration;</p>
+                                   <hr>
+                                   <p>transition: left 4s, width 4s, height 4s, background-color 2s;</p>
+
+                                   <br>
+
+                                   <div class="center">
+                                       <h3>Navigation | Transition Hover Effect</h3>
+                                   </div><!--/center-->
+
+                                   <p><span class="bold">Below</span> is also a similar example using the hover effect that highlights the links to the user.</p>
+
+                                   <ul class="nav-trans">
+                                       <li><a href="#">Home</a></li>
+                                       <li><a href="#">About</a></li>
+                                       <li><a href="#">Gallery</a></li>
+                                       <li><a href="#">Contact</a></li>
+                                   </ul><!--/nav-trans-->
+                                   <br>
+                                   <hr>
+
+
+                                   <div class="center">
+                                       <h3>Managing Transition Timing</h3>
+                                   </div><!--/center-->
+
+                                   <p>The timing of transition is controlled by adding a timing value to the transition property.</p>
+                                   <p>transition: property duration timing;</p>
+                                   <p>Timing can be defined by using 5 key words:</p>
+                                   <ul>
+                                       <li>ease - style changes slowly, speeds up in the middle and ends slowly [default].</li>
+                                       <li>linear - maintains constant rate throughout duration.</li>
+                                       <li>ease-in - starts slow and speeds up to the end.</li>
+                                       <li>ease-out - starts fast and slows down to the end</li>
+                                       <li>ease-in-out - starts slower than ease timing, speeds up and then slows down towards the end.</li>
+                                   </ul>
+
+                                   <div class="img-cont">
+                                       <div class="row-wrap">
+                                           <div class="box"><h4 class="caption">box-1</h4></div>
+                                           <div class="box"></div>
+                                           <div class="box"></div>
+                                           <div class="box"></div>
+                                           <div class="box"></div>
+                                           <div class="box"></div>
+                                           <div class="box"></div>
+                                           <div class="box"></div>
+                                       </div><!--/row-->
+                                   </div><!--/img-cont-->
+
+
+                                   <div class="center">
+                                       <h3>Managing Transition Timing Delay</h3>
+                                   </div><!--/center-->
+
+                                   <p>transition: property duration timing delay;</p>
+                                   <p>transition: width 2s ease 0s, height 2s ease 0s, left 1s ease 2s, background-color 2s ease 4s;</p>
+
+                                   <div class="box-cont">
+                                       <div class="btn-2"></div>
+                                   </div>
+
+                                   <p>Why delay a transition? We usually do this when we have several styles that are changing and want to apply them in a sequential order.</p>
+
+
+                               </div><!--/cont-->
+                           </div><!--/right-col-->
+
+
+
+                           <div class="right-col">
+                               <div class="cont">
+
+                                   <h3>Transformations</h3>
+
+                               </div>
+                           </div><!--/left-col-->
+
+
+
+
+
+                    </div><!--/row-->
+                </div><!--/container-->
+            </section><!--/exercises-->
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+
+</div><!--/wrapper-->
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="js/js.js"></script>
+</body>
+</html>
